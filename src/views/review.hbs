@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Review</title>
+</head>
+<body>
+    <h1>Leave A Review</h1>
+    <form action="/review-thanks" method="POST">
+        <div class="mb-3">
+            <label for="name">Your Name</label>
+            <input type="text" placeholder="Your Name Here Or Else" name="name">
+        </div>
+        <div class="mb-3">
+            <textarea 
+            name="comment" 
+            required 
+            class="form-control" 
+            placeholder="Leave comment here" 
+            style="height: 100px"
+            ></textarea>
+            <label for="comment">Comments</label>
+        </div>
+        <h3>Rating</h3>
+        <div class="mb-3 form-check">
+            <input name="rating" type="radio" class="form-check-input" id="five" value="5" checked>
+            <label class="form-check-input" for="five">5 (best)</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input name="rating" type="radio" class="form-check-input" id="four" value="4" checked>
+            <label class="form-check-input" for="five">4</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input name="rating" type="radio" class="form-check-input" id="three" value="3" checked>
+            <label class="form-check-input" for="five">3</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input name="rating" type="radio" class="form-check-input" id="two" value="2" checked>
+            <label class="form-check-input" for="five">2</label>
+        <div class="mb-3 form-check">
+            <input name="rating" type="radio" class="form-check-input" id="one" value="1" checked>
+            <label class="form-check-input" for="five">1 (worst)</label>
+        </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+</body>
+</html>
